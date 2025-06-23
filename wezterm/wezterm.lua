@@ -8,7 +8,7 @@ return {
     family = "Agave Nerd Font",
   }),
   font_rules = {},
-  font_size = 10,
+  font_size = 12,
 
   default_cursor_style = "BlinkingBlock",
   animation_fps = 1,
