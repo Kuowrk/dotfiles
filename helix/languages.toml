@@ -1,0 +1,49 @@
+[[language]]
+name = "rust"
+auto-format = false
+
+[language-server.rust-analyzer.config]
+check = { command = "clippy" }
+completion.callable.snippets = "add_parentheses"
+
+[[language]]
+name = "lua"
+auto-format = true
+
+[[language]]
+name = "c-sharp"
+language-servers = ["csharp-ls", "OmniSharp"]
+
+[[language]]
+name = "bash"
+file-types = [
+  "sh",
+  "bash",
+  "zsh",
+  ".bash_login",
+  ".bash_logout",
+  ".bash_profile",
+  ".bashrc",
+  ".profile",
+  ".zshenv",
+  "zshenv",
+  ".zlogin",
+  "zlogin",
+  ".zlogout",
+  "zlogout",
+  ".zprofile",
+  "zprofile",
+  ".zshrc",
+  "zshrc",
+  ".zimrc",
+  "APKBUILD",
+  "PKGBUILD",
+  "eclass",
+  "ebuild",
+  "bazelrc",
+  ".bash_aliases",
+  "Renviron",
+  ".Renviron",
+  "conf"
+]
+shebangs = ["sh", "bash", "dash", "zsh", "nix-shell"]
