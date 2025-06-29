@@ -20,6 +20,10 @@
 $env.config.show_banner = false
 $env.config.buffer_editor = "hx"
 
+# Append Nix to PATH
+let nix_path = "/nix/var/nix/profiles/default/bin"
+$env.PATH = ($env.PATH | split row (char esep) | append $nix_path)
+
 mkdir ($nu.data-dir | path join "vendor/autoload")
 starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
 

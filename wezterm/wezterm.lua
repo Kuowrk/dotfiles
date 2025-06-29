@@ -2,7 +2,7 @@ local wezterm = require("wezterm")
 
 return {
   -- Start nushell from zsh
-  default_prog = { "zsh", "-l", "-c", "nu" },
+  default_prog = { "zsh", "-l", "-c", "exec nu" },
 
   font = wezterm.font({
     family = "Agave Nerd Font",
@@ -24,7 +24,7 @@ return {
   			key = "t",
   			mods = "CTRL|SHIFT",
   			action = wezterm.action.SpawnCommandInNewTab({
-  				args = { "zsh", "-l", "-c", "nu" },
+  				args = { "zsh", "-l", "-c", "exec nu" },
   			}),
   		},
   	},
