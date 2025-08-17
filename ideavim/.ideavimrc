@@ -1,31 +1,31 @@
 " --- Basic settings ---
 set number relativenumber
 set idearefactormode=keep
-set clipboard=unnamedplus      " Share clipboard with system
-set ideajoin                   " Enable :action mappings
-set incsearch                  " Incremental search
-set hlsearch                   " Highlight search results
-set ignorecase smartcase       " Smarter searching
+set clipboard=unnamedplus
+set ideajoin
+set incsearch
+set hlsearch
+set ignorecase smartcase
 
 let mapleader = " "
 
 " --- Better navigation ---
-nnoremap <Leader>w :action FileStructurePopup<CR>  " show current file structure
-nnoremap <Leader>o :action RecentFiles<CR>         " open recent files
-nnoremap <Leader>e :action ShowErrorDescription<CR> " quick error popup
+nnoremap <Leader>w :action FileStructurePopup<CR>
+nnoremap <Leader>o :action RecentFiles<CR>
+nnoremap <Leader>e :action ShowErrorDescription<CR>
 
 " --- Symbol & project search ---
-nnoremap <Leader>s :action GotoSymbol<CR>          " search for symbols
-nnoremap <Leader>c :action GotoClass<CR>           " search for classes
-nnoremap <Leader>f :action GotoFile<CR>            " search for files
-nnoremap <Leader>r :action SearchEverywhere<CR>    " universal search
+nnoremap <Leader>s :action GotoSymbol<CR>
+nnoremap <Leader>c :action GotoClass<CR>
+nnoremap <Leader>f :action GotoFile<CR>
+nnoremap <Leader>r :action SearchEverywhere<CR>
 
 " --- Code navigation ---
-nnoremap <Leader>d :action GotoDeclaration<CR>     " jump to declaration
-nnoremap <Leader>i :action GotoImplementation<CR>  " jump to implementation
-nnoremap <Leader>u :action FindUsages<CR>          " find usages
-nnoremap <Leader>b :action Back<CR>                " go back
-nnoremap <Leader>n :action Forward<CR>             " go forward
+nnoremap <Leader>d :action GotoDeclaration<CR>
+nnoremap <Leader>i :action GotoImplementation<CR>
+nnoremap <Leader>u :action FindUsages<CR>
+nnoremap <Leader>b :action Back<CR>
+nnoremap <Leader>n :action Forward<CR>
 
 " --- Refactoring & editing ---
 nnoremap <Leader>R :action Refactorings.QuickListPopupAction<CR>
@@ -35,8 +35,8 @@ vnoremap <Leader>l :action CommentByLineComment<CR>
 
 
 " --- Misc ---
-nnoremap <Leader>q :action CloseContent<CR>        " close current tab
-nnoremap <Leader>p :action PasteMultiple<CR>       " paste from history
+nnoremap <Leader>q :action CloseContent<CR>
+nnoremap <Leader>p :action PasteMultiple<CR>
 
 nnoremap H :action PreviousTab<CR>
 nnoremap L :action NextTab<CR>
